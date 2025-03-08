@@ -1,5 +1,4 @@
-
-# ghost_youtube.rb
+# lib/ghost_youtube.rb
 
 # Ensure that yt-dlp is installed on the system.
 def ensure_yt_dlp_installed
@@ -10,11 +9,12 @@ end
 
 ensure_yt_dlp_installed
 
-require_relative 'lib/errors'
-require_relative 'lib/download/youtube'
-require_relative 'lib/download/vimeo'
-require_relative 'lib/caption/youtube_caption'
-require_relative 'lib/cookies/cookies_handler'
+# Fix the paths - use './errors' instead of 'lib/errors'
+require_relative './errors'
+require_relative './download/youtube'
+require_relative './download/vimeo'
+require_relative './caption/youtube_caption'
+require_relative './cookies/cookies_handler'
 
 module Ghost
   module Download
