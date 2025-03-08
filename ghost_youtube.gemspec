@@ -1,7 +1,7 @@
 # ghost_youtube.gemspec
 Gem::Specification.new do |spec|
     spec.name          = "ghost_youtube"
-    spec.version       = "0.1.0"
+    spec.version       = "0.1.1"
     spec.authors       = ["Maven"]
   
     spec.summary       = %q{A Ruby library to download YouTube videos with audio and captions of Videos}
